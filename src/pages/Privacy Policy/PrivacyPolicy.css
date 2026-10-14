@@ -1,0 +1,104 @@
+.privacyPolicy-page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+    align-items: center;
+    justify-content: center; 
+    background-color: #f5f5f5; 
+    padding-bottom: 0;
+}
+
+.privacyPolicy-title {
+    font-size: 36px;
+    font-weight: bold;
+    color: #000000; 
+    padding-top: 20px;
+    margin-bottom: 10px !important;  
+    text-align: center; 
+}
+
+.privacyPolicy-content {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    gap: 60px !important; 
+    width: 100%;
+}
+
+
+.privacyPolicy-info-box {
+    background-color: white; 
+    padding: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    width: 60% !important;
+    max-width: 600px; 
+    text-align: left;
+    margin-left: 50px;
+}
+
+.privacyPolicy-info-title {
+    font-size: 16px;
+    color: #000000; 
+    margin: 10px 50px !important;
+    font-weight: bold !important;
+    margin-bottom: 0 !important;
+}
+
+.privacyPolicy-info-text {
+    font-size: 16px;
+    color: #000000;
+    margin: 10px 50px !important;
+}
+
+
+
+/* --------- Responsiveness --------- */
+
+
+/* Para pantallas medianas como tabletas */
+@media (max-width: 768px) {
+    .privacyPolicy-title {
+        font-size: 28px; 
+        padding-top: 15px; 
+    }
+
+    .privacyPolicy-content {
+        gap: 40px !important; 
+    }
+
+    .privacyPolicy-info-box {
+        width: 80% !important; 
+        margin-left: 0; 
+        padding: 15px; 
+    }
+
+    .privacyPolicy-info-title,
+    .privacyPolicy-info-text {
+        font-size: 14px; 
+        margin: 10px 20px !important; 
+    }
+}
+
+/* Para pantallas pequeñas como móviles */
+@media (max-width: 480px) {
+    .privacyPolicy-title {
+        font-size: 24px; 
+        padding-top: 10px;
+    }
+
+    .privacyPolicy-content {
+        gap: 20px !important; 
+    }
+
+    .privacyPolicy-info-box {
+        width: 90% !important;
+        margin-left: 0; 
+        padding: 10px; 
+    }
+
+    .privacyPolicy-info-title,
+    .privacyPolicy-info-text {
+        font-size: 12px; 
+        margin: 10px 10px !important; 
+    }
+}

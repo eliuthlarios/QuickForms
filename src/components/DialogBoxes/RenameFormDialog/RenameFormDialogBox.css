@@ -1,0 +1,108 @@
+.custom-dialog {
+    border-radius: 20px !important;
+    padding: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+  }
+  
+
+  .custom-dialog-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+
+  .custom-dialog-content {
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  
+
+  .custom-dialog-input {
+    background-color: #f4f4f4;
+    border-radius: 4px;
+    width: 100%; /
+  }
+  
+  .custom-dialog-input input {
+    padding: 10px;
+  }
+  
+
+  .custom-dialog-actions {
+    display: flex;
+    justify-content: space-between; 
+    gap: 10px;
+  }
+  
+
+  .custom-dialog-button {
+    color: #000000 !important;
+    border-radius: 4px;
+    padding: 5px 15px;
+    font-size: 14px;
+    text-transform: none;
+    transition: background-color 0.3s;
+  }
+  
+  .custom-dialog-button:first-child {
+    background-color: #f0f0f0; 
+    color: #666;
+    border: 1px solid #ddd;
+  }
+  
+  .custom-dialog-button:first-child:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .custom-dialog-button:last-child {
+    background-color: #72c576; 
+  }
+  
+  .custom-dialog-button:last-child:hover {
+    background-color: #5aa960; 
+  }
+  
+  /* ---- Media Queries ---- */
+  
+  /* Para pantallas muy pequeñas (móviles) */
+  @media (max-width: 480px) {
+    .custom-dialog {
+      padding: 10px;
+      border-radius: 12px;
+      max-width: 90%; 
+    }
+  
+    .custom-dialog-title {
+      font-size: 16px;
+    }
+  
+    .custom-dialog-button {
+      font-size: 12px;
+      padding: 5px 10px;
+    }
+  }
+  
+  /* Para tablets (pantallas medianas) */
+  @media (max-width: 768px) {
+    .custom-dialog {
+      max-width: 80%;
+    }
+  
+    .custom-dialog-title {
+      font-size: 17px;
+    }
+  }
+  
+  /* Para pantallas grandes (desktop) */
+  @media (min-width: 769px) {
+    .custom-dialog {
+      max-width: 400px;
+    }
+  }

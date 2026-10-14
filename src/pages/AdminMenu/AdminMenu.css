@@ -1,0 +1,159 @@
+.header-title {
+  position: absolute;
+  top: 40px !important;
+  left: 10%;
+  font-weight: bold;
+  font-size: 45px !important;
+  margin-bottom: 30px !important;
+  margin-top: 0;
+}
+
+.back-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  position: absolute;
+  top: 50px !important;
+  left: 50px;
+  width: auto; 
+  height: auto; 
+  z-index: 10; 
+}
+.back-button:hover {
+  transform: scale(1.1);
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+}
+
+
+/* Barra de búsqueda */
+.search-bar {
+  width: 300px;
+  position: absolute;
+  right: 10rem;
+  top: 50px;
+}
+
+.search-bar .MuiOutlinedInput-root {
+  background-color: #e7e4eb;
+  border-radius: 30px;
+  border: none;
+  padding: 5px 15px;
+  transition: background-color 0.3s ease;
+  width: 150%;
+}
+
+.search-bar:focus-within .MuiOutlinedInput-root {
+  background-color: #ffffff;
+}
+
+.search-bar .MuiOutlinedInput-notchedOutline {
+  border: none;
+}
+
+.search-bar .search-icon {
+  color: #6b6b6b !important;
+}
+
+.search-bar .MuiInputAdornment-root {
+  margin-right: 8px;
+}
+
+@media (max-width: 1280px) {
+  .header-title {
+    font-size: 40px !important;
+    left: 15%;
+    top: 25px !important;
+  }
+
+  .search-bar {
+    right: 8rem;
+    width: 280px;
+    top: 35px;
+  }
+
+  .back-button {
+    bottom: 700px !important;
+    width: 40px;
+  }
+}
+
+
+/* Responsividad para pantallas más pequeñas */
+@media (max-width: 1024px) {
+  .header-title {
+    font-size: 35px !important;
+    left: 22%;
+    top: 30px !important;
+  }
+
+  .back-button {
+    bottom: 700px !important;
+    width: 40px;
+  }
+  .search-bar {
+    right: 5rem;
+    width: 250px;
+    top: 40px;
+  }
+
+  .search-bar .MuiOutlinedInput-root {
+    width: 130%;
+  }
+}
+
+@media (max-width: 768px) {
+  .header-title {
+    font-size: 36px !important;
+    left: 20%;
+    top: 28px !important;
+  }
+
+  .back-button {
+    position: absolute;
+    bottom: 661px !important;
+    left: 17px;
+  }
+
+  .search-bar {
+    right: 2rem;
+    width: 200px;
+    top: 30px;
+  }
+
+  .search-bar .MuiOutlinedInput-root {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-title {
+    font-size: 22px !important;
+    left: 5%;
+    top: 10px !important;
+  }
+
+  .back-button {
+    top: 20px !important;
+    left: 10px;
+    padding: 8px; /* Ajustar el tamaño del botón */
+  }
+
+  .search-bar {
+    right: 1rem;
+    width: 180px;
+    top: 20px;
+  }
+
+  .search-bar .MuiOutlinedInput-root {
+    width: 90%;
+  }
+}
+
+
+
+
+
+  

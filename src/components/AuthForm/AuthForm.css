@@ -1,0 +1,248 @@
+
+.auth-form {
+  width: 40% !important;
+  max-width: 110%!important;
+  padding: 40px;
+  padding-bottom: 10px !important;
+  border-radius: 40px;
+  background-color: rgb(255, 255, 255) !important;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+  margin: 0;
+  left: 250px!important;
+  top: 180px !important;
+}
+
+.auth-title {
+  position: relative;
+  text-align: center;
+  margin-bottom: 0 !important;
+  margin-top: 0 !important;
+  font-size: 1.5rem;
+  color: #333 !important;
+  bottom:35px !important;
+  margin-bottom: 0 !important;
+}
+
+.auth-input {
+  margin-bottom: 20px;
+  width: 100% !important;
+  margin-top: 0 !important;
+}
+
+.auth-button {
+  background-color: #333 !important;
+  color: #ffffff !important;
+  width: 150px !important;
+  align-self: center;
+  padding: 10px 20px;
+  border-radius: 20px !important;
+  text-align: center;
+  font-size: 1rem;
+  transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.auth-button:hover {
+  background-color: #555 !important;
+  transform: scale(1.05);
+}
+
+.toggle-button {
+  color: #000000 !important;
+  font-size: 0.9rem;
+  text-decoration: underline;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+/* --------- Formularios de Administradores --------- */
+.auth-form-container {
+  position: absolute;
+  width: 51% !important;
+  max-width: 51%;
+  overflow: visible;
+  height: auto;
+}
+
+.auth-form {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding-bottom: 20px !important;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.auth-form.slide-out {
+  transform: translateX(100%);
+  opacity: 0;
+  pointer-events: none;
+}
+
+.auth-form.slide-in {
+  transform: translateX(0);
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.admin-switch-btn {
+  position: absolute;
+  bottom: 1px;
+  left: 120px;
+  z-index: 10;
+  color: #555;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+/* --------- Media Queries --------- */
+
+/* Pantallas muy pequeñas (móviles pequeños) */
+@media (max-width: 480px) {
+  .auth-form {
+    max-width: 95% !important;
+  }
+
+  .auth-title {
+    font-size: 1.2rem;
+  }
+
+  .auth-button {
+    width: 100%;
+    padding: 12px 0;
+  }
+
+  .toggle-button {
+    font-size: 0.85rem;
+  }
+}
+
+/* Pantallas pequeñas (móviles y tablets pequeños) */
+@media (max-width: 768px) {
+  .auth-form {
+    width: 85% !important;
+    max-width: 110%!important;
+    padding: 40px;
+    padding-bottom: 10px !important;
+    border-radius: 40px;
+    background-color: rgb(255, 255, 255) !important;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    display: block;
+    flex-direction: column;
+    justify-content: left !important;
+    align-items: left !important;
+    transition: all 0.3s ease-in-out;
+    margin: 0;
+    left: 0px!important;
+    top: 120px !important;
+    position:absolute !important;
+  }
+
+  .auth-title {
+    font-size: 1.4rem;
+  }
+
+  .auth-button {
+    width: 120px;
+    left:30px;
+    margin-bottom: 15px !important;
+  }
+
+  .admin-switch-btn {
+    position: absolute;
+    bottom: 1px;
+    left: 125px;
+    z-index: 10;
+    color: #555;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 0.9rem;
+  }
+
+
+  .auth-input {
+    margin-bottom: 30px;
+    width: 100% !important;
+  }
+
+}
+
+
+/* Pantallas medianas (tablets y laptops pequeñas) */
+@media (max-width: 1024px) {
+  .auth-form {
+    width: 85% !important;
+    max-width: 110%!important;
+    padding: 40px;
+    padding-bottom: 10px !important;
+    border-radius: 40px;
+    background-color: rgb(255, 255, 255) !important;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    display: block;
+    flex-direction: column;
+    justify-content: left !important;
+    align-items: left !important;
+    transition: all 0.3s ease-in-out;
+    margin: 0;
+    left: 0px!important;
+    top: 120px !important;
+    position:absolute !important;
+  }
+
+  .auth-title {
+    font-size: 1.4rem;
+  }
+
+  .auth-button {
+    width: 120px;
+    left:40px;
+    margin-bottom: 4px !important;
+  }
+
+  .admin-switch-btn {
+    position: absolute;
+    bottom: 1px;
+    left: 200px;
+    z-index: 10;
+    color: #555;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 0.9rem;
+  }
+
+
+  .auth-input {
+    margin-bottom: 30px;
+    width: 100% !important;
+  }
+}
+
+/* Pantallas grandes (desktop y laptops grandes) */
+@media (min-width: 1200px) {
+  .auth-form {
+    max-width: 350px;
+  }
+
+  .auth-title {
+    font-size: 1.6rem;
+  }
+
+  .auth-button {
+    width: 120px;
+  }
+  
+}
+
+/* Eliminar decoraciones de los campos de contraseña por los personalizados de Material-Ui */
+input[type="password"]::after,
+input[type="password"]::before {
+  content: none;
+}

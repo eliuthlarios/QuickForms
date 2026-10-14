@@ -1,0 +1,260 @@
+@font-face {
+  font-family: 'TsukimiRounded';
+  src: url('../../assets/fonts/TsukimiRounded-Regular.ttf') format('truetype');
+}
+
+.home-container {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  background-color: #fcefff;
+  padding: 0;
+  flex-direction: column;
+  overflow-y: auto;
+  margin-top: 40px;
+  left: 110px !important;
+}
+
+.home-content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 200px;
+  width: 100%;
+  max-width: 1200px;
+  margin-bottom: 40px;
+}
+
+.home-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-image {
+  max-width: 220%;
+  width: 220%;
+  height: auto;
+  padding-left: 320px !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+.home-form {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items:right;
+  gap: 60px !important;
+  margin-left: 0 !important;
+}
+
+.home-title {
+  font-family: 'TsukimiRounded' !important;
+  font-size: 3.4rem !important;
+  font-weight: bold;
+  color: #333;
+  text-align: right;
+  line-height: 1.1 !important;
+}
+
+.home-title span {
+  display: block;
+  margin-bottom: 2px;
+}
+
+.home-title .first-line {
+  text-align: right;
+  margin-right: 210px;
+}
+
+.auth-form {
+  width: 100%;
+  max-width: 300px;
+  padding: 15px;
+  border-radius: 30px;
+  background-color: white;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.call-to-action {
+  text-align: center;
+  margin: 100px;
+  padding-bottom: 50px;
+}
+
+.cta-text {
+  font-family: 'TsukimiRounded' !important;
+  font-size: 3.8rem !important;
+  font-weight: bold;
+  margin-bottom: 70px !important;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.cta-button {
+  font-size: 1.3rem !important;
+  padding: 22px !important;
+  border-radius: 20px;
+  background-color: #333 !important;
+}
+
+/* --------- Responsiveness --------- */
+
+/* Pantallas grandes (≥1200px) */
+@media (min-width: 1200px) {
+  .home-content {
+    gap: 200px;
+  }
+
+  .home-image {
+    max-width: 220%;
+    padding-left: 350px;
+  }
+
+  .home-form {
+    gap: 85px;
+  }
+
+  .cta-text {
+    font-size: 3.8rem !important;
+    padding: 0 100px;
+  }
+
+  .cta-button {
+    font-size: 1.3rem !important;
+    padding: 22px !important;
+  }
+}
+
+/* Pantallas medianas (≤1024px) */
+@media (max-width: 1024px) {
+  .home-content {
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+  }
+
+  .home-image {
+    padding-left: 0;
+    max-width: 100%;
+  }
+
+  .home-form {
+    align-items: center;
+    gap: 40px;
+  }
+
+  .home-title {
+    text-align: center;
+    font-size: 2.5rem !important;
+  }
+
+  .home-title .first-line {
+    margin-right: 0;
+  }
+
+  .cta-text {
+    font-size: 2.5rem !important;
+    padding: 0 50px;
+  }
+
+  .cta-button {
+    font-size: 1.1rem !important;
+    padding: 18px !important;
+  }
+}
+
+/* Pantallas pequeñas (≤768px) */
+@media (max-width: 768px) {
+  .home-content {
+    gap: 20px;
+  }
+
+  .home-title {
+    font-size: 2.5rem !important;
+  }
+
+  .home-title .first-line {
+    margin-right: 0;
+  }
+
+  .cta-text {
+    font-size: 2rem !important;
+    padding: 0 20px;
+    margin-top:500px !important;
+  }
+
+  .cta-button {
+    font-size: 1rem !important;
+    padding: 15px !important;
+  }
+
+  .home-image {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+    right: 150px !important;
+  }
+
+  .home-form {
+    gap: 20px;
+    align-items: center;
+  }
+
+  .auth-form {
+    width: 80%;
+  }
+}
+
+/* Pantallas muy pequeñas (≤480px) */
+@media (max-width: 480px) {
+  .home-title {
+    font-size: 2rem !important;
+    text-align: center;
+  }
+
+  .cta-text {
+    font-size: 1.6rem !important;
+    padding: 0 10px;
+  }
+
+  .cta-button {
+    font-size: 0.9rem !important;
+    padding: 12px !important;
+  }
+
+  .home-image {
+    width: 100%;
+    padding-left: 0;
+  }
+
+  .home-form {
+    gap: 15px;
+    align-items: center;
+  }
+
+  .auth-form {
+    width: 90%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,170 @@
+.footer-container {
+  background-color: #b3b3b3;
+  text-align: left;
+  padding: 0 33%;
+  width: 515px;
+}
+
+.footer-text-icons {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  margin: 20px 30px 0 100px;
+}
+
+.footer-text {
+  font-size: 1.3rem !important;
+  color: black;
+  margin-right: 10px;
+}
+
+.footer-icons {
+  display: flex;
+  gap: 25px;
+  padding-top: 6px;
+}
+
+.footer-icons a {
+  text-decoration: none;
+  color: black;
+  font-size: 1rem !important;
+  transition: color 0.3s;
+}
+
+.footer-icons a:hover {
+  color: #555;
+}
+
+.footer-divider {
+  height: 1px;
+  background-color: #e6e6fa;
+  width: 100%;
+  margin: 10px;
+  border: none;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.2rem;
+  color: black;
+  margin-top: 10px;
+}
+
+.footer-bottom a {
+  text-decoration: none;
+  color: black;
+  margin: 10px;
+  transition: color 0.3s;
+}
+
+.footer-bottom a:hover {
+  text-decoration: underline;
+}
+
+/* --------- Responsiveness --------- */
+
+/* Pantallas grandes (>1200px) */
+@media (min-width: 1200px) {
+  .footer-container {
+    padding: 0 33%;
+  }
+
+  .footer-text-icons {
+    margin: 20px 30px 0 100px;
+  }
+
+  .footer-bottom {
+    font-size: 1.2rem;
+    margin-top: 10px;
+  }
+}
+
+
+/* Pantallas pequeñas (móviles) */
+@media (max-width: 768px) {
+  .footer-container {
+    padding: 0 10%;
+    width: 80%;
+  }
+
+  .footer-text-icons {
+    margin: 20px 10px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 20px;
+  }
+
+  .footer-bottom a {
+    margin: 5px;
+  }
+
+  .footer-icons {
+    gap: 15px;
+  }
+}
+
+
+
+@media (max-width: 1024px) {
+  .footer-container {
+    padding: 0 10%;
+    width: 90%;
+    margin-left: 100px;
+  }
+
+  .footer-text-icons {
+    margin: 20px 10px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 20px;
+  }
+
+  .footer-bottom a {
+    margin: 5px;
+  }
+
+  .footer-icons {
+    gap: 15px;
+  }
+}
+
+
+/* Pantallas muy pequeñas (móviles más pequeños) */
+@media (max-width: 480px) {
+  .footer-container {
+    padding: 0 5%;
+  }
+
+  .footer-text-icons {
+    margin: 15px 5px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+    font-size: 0.9rem;
+    margin-top: 20px;
+  }
+
+  .footer-bottom a {
+    margin: 3px;
+  }
+
+  .footer-icons {
+    gap: 10px;
+  }
+}
+
+
+

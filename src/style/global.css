@@ -1,0 +1,22 @@
+/* Estilos globales */
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #fcefff;
+  overflow-x: hidden;
+}
+
+/*Ocultar icono predeterminado para mostrar y ocultar contraseña*/
+input[type="password"]::-ms-reveal,
+input[type="password"]::-ms-clear {
+    display: none; /* Para Internet Explorer y Edge */
+}
+
+input[type="password"]::-webkit-inner-spin-button,
+input[type="password"]::-webkit-clear-button {
+    display: none; /* Para navegadores basados en Webkit */
+}
+
+input[type="password"]::-webkit-password-toggle-button {
+    display: none; /* Para íconos de contraseñas predeterminados */
+}

@@ -1,0 +1,105 @@
+.contact-page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+    align-items: center;
+    justify-content: center; 
+    background-color: #f5f5f5; 
+    padding-bottom: 0;
+}
+
+.contact-title {
+    font-size: 36px;
+    font-weight: bold;
+    color: #000000; 
+    padding-top: 20px;
+    margin-bottom: 10px !important; 
+    text-align: center; 
+}
+
+.contact-content {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    gap: 60px !important; 
+    width: 100%;
+}
+
+.contact-info-box {
+    background-color: white;
+    padding: 30px;
+    border-radius: 30px; 
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+    width: 60% !important;
+    max-width: 900px; 
+    text-align: left; 
+    margin-left: 50px;
+}
+
+.contact-info-text {
+    font-size: 16px;
+    color: #000000; 
+    margin: 10px 50px !important;
+}
+
+
+.contact-image-container {
+    text-align: center; 
+}
+
+.contact-image {
+    width: 100%; 
+    max-width: 400px; 
+    height: auto; 
+}
+
+/* --------- Responsiveness --------- */
+
+
+/* Para pantallas medianas como tabletas */
+@media (max-width: 768px) {
+    .contact-info-box {
+        width: 80% !important;
+        margin-left: 20px; 
+        padding: 20px; 
+    }
+
+    .contact-title {
+        font-size: 28px;
+    }
+
+    .contact-info-text {
+        font-size: 14px; 
+        margin: 10px 20px !important;
+    }
+
+    .contact-content {
+        gap: 40px !important; 
+    }
+}
+
+/* Para pantallas pequeñas como móviles */
+@media (max-width: 480px) {
+    .contact-info-box {
+        width: 90% !important; 
+        margin-left: 0; 
+        padding: 15px; 
+    }
+
+    .contact-title {
+        font-size: 24px;
+    }
+
+    .contact-info-text {
+        font-size: 14px;
+        margin: 10px 10px !important; 
+    }
+
+    .contact-image {
+        max-width: 300px; 
+    }
+
+    .contact-content {
+        gap: 30px !important; 
+    }
+}

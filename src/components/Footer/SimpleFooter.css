@@ -1,0 +1,70 @@
+.footer-simple-container {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  gap: 30px; 
+  background-color: #b3b3b3;
+  padding: 12px;
+  width: 110%;
+  margin-top: auto; 
+  border-top: 1px solid #000000; 
+}
+
+.footer-simple-link {
+  font-size: 20px;
+  color: #000000;
+  text-decoration: none;
+  padding-left: 20px;
+}
+
+.footer-simple-link:hover {
+  text-decoration: underline;
+}
+
+.footer-simple-text {
+  font-size: 14px;
+  color: #777;
+}
+
+
+
+/* --------- Responsiveness --------- */
+
+/* Para pantallas medianas como tabletas */
+@media (max-width: 768px) {
+  .footer-simple-container {
+    flex-direction: column; 
+    gap: 15px; 
+    padding: 20px; 
+  }
+
+  .footer-simple-link {
+    font-size: 18px;
+    padding-left: 1; 
+  }
+
+  .footer-simple-text {
+    font-size: 13px; 
+    text-align: center; 
+  }
+}
+
+/* Para pantallas pequeñas como móviles */
+@media (max-width: 480px) {
+  .footer-simple-container {
+    flex-direction: column; 
+    gap: 14px;
+    padding: 15px;
+    width: 100%; 
+  }
+
+  .footer-simple-link {
+    font-size: 16px; 
+    text-align: center; 
+  }
+
+  .footer-simple-text {
+    font-size: 12px; 
+    text-align: center; 
+  }
+}

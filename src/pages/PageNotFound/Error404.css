@@ -1,0 +1,34 @@
+/* Error404.css */
+
+.error-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .error-text {
+    text-align: left;
+    margin-right: 20px;
+  }
+  
+  .error-text h1 {
+    font-size: 3rem;
+    color: #333;
+    margin: 0;
+  }
+  
+  .error-text p {
+    font-size: 1.2rem;
+    color: #666;
+    margin: 10px 0 0;
+  }
+  
+  .error-image img {
+    max-width: 100%;
+    height: auto;
+  }
